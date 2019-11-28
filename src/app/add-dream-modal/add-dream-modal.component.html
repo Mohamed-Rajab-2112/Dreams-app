@@ -1,0 +1,24 @@
+<div class="modal-header">
+  <h3>Add New</h3>
+</div>
+<form #addDreamForm="ngForm" (ngSubmit)="addDreamForm.valid && saveDream(dream)">
+  <div class="modal-body">
+    <fieldset>
+      <label>Title *</label>
+      <input class="form-control" required placeholder="Title" name="name" [(ngModel)]="dream.name"/>
+    </fieldset>
+    <fieldset>
+      <label>Tag *</label>
+      <input class="form-control" required placeholder="Tag" name="tag" [(ngModel)]="dream.tag"/>
+    </fieldset>
+    <fieldset>
+      <label>Description *</label>
+      <textarea class="form-control" required placeholder="Description" name="description" [(ngModel)]="dream.description"></textarea>
+    </fieldset>
+  </div>
+
+  <div class="modal-footer">
+    <button class="btn btn-default" (click)="closeModal()">Close</button>
+    <button class="btn btn-primary" type="submit">Save</button>
+  </div>
+</form>

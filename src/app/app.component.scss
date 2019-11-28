@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 50px;
+
+  input {
+    width: 200px;
+  }
+}
+
+.list-item {
+  border: 1px solid lightblue;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
